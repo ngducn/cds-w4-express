@@ -28,7 +28,7 @@ app.get("/jobs", (req, res) => {
     jobs_list = jobs_list.sort((a, b) => b - a);
   }
   else if (req.query.city === "Paris") {
-    jobs_list = jobs_list.filter((job) => job.city === "Paris");
+    jobs_list = jobs_list.filter((job) => job.city === "San Francisco");
   }
 
   console.log(req.query)
